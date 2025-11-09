@@ -78,10 +78,10 @@ body {
 }
 
 .controls__grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  align-items: flex-end;
+  align-items: end;
 }
 
 .control {
@@ -89,6 +89,12 @@ body {
   flex-direction: column;
   gap: 0.4rem;
   font-weight: 500;
+}
+
+.controls__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 select {
@@ -130,7 +136,18 @@ select:focus {
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }
 
+.btn.secondary {
+  background: #e0e7ff;
+  color: #312e81;
+  box-shadow: none;
+  border: 1px solid rgba(49, 46, 129, 0.15);
+}
+
 .btn.primary:active {
+  transform: scale(0.98);
+}
+
+.btn.secondary:active {
   transform: scale(0.98);
 }
 
@@ -238,6 +255,12 @@ select:focus {
   color: var(--color-accent);
 }
 
+.option-btn.selected {
+  border-color: var(--color-accent);
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--color-accent);
+}
+
 .option-btn:disabled {
   cursor: not-allowed;
   opacity: 0.8;
@@ -265,6 +288,10 @@ select:focus {
 
 .feedback.incorrect {
   color: var(--color-false);
+}
+
+.feedback.pending {
+  color: var(--color-muted);
 }
 
 .explanation {

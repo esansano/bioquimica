@@ -1,7 +1,9 @@
 const QUESTION_COUNT = 20;
+const UNANSWERED_MESSAGE = "✎ Sin responder";
 
 const topicSelect = document.getElementById("topicSelect");
 const regenerateBtn = document.getElementById("regenerateBtn");
+const submitBtn = document.getElementById("submitBtn");
 const questionsContainer = document.getElementById("questionsContainer");
 const scoreValue = document.getElementById("scoreValue");
 const counterValue = document.getElementById("counterValue");
@@ -9,8 +11,12 @@ const statusMessage = document.getElementById("statusMessage");
 
 let allQuestions = [];
 let currentQuestions = [];
+let selections = new Map();
+let hasSubmitted = false;
 let score = 0;
-let answered = 0;
+const cardMap = new Map();
+
+const normalize = (value) => value?.toString().trim().toLowerCase();
 
 const setStatus = (message, type = "info") => {
   statusMessage.textContent = message ?? "";
@@ -26,52 +32,123 @@ const shuffle = (array) => {
   return clone;
 };
 
-const updateScoreboard = () => {
-  scoreValue.textContent = score;
-  counterValue.textContent = `${answered} / ${currentQuestions.length}`;
+const updateSelectionCounter = () => {
+  const total = currentQuestions.length;
+  counterValue.textContent = total ? `${selections.size} / ${total}` : "0 / 0";
 };
 
-const resetScore = () => {
+const refreshScoreDisplay = () => {
+  scoreValue.textContent = hasSubmitted ? score : "—";
+};
+
+const resetSession = () => {
+  selections = new Map();
+  hasSubmitted = false;
   score = 0;
-  answered = 0;
-  updateScoreboard();
+  submitBtn.disabled = true;
+  cardMap.clear();
+  refreshScoreDisplay();
+  updateSelectionCounter();
 };
 
-const handleAnswer = (question, userAnswer, card) => {
-  if (card.dataset.answered === "true") {
+const handleSelection = (question, choice, card, button) => {
+  if (hasSubmitted) {
     return;
   }
 
-  const isCorrect = question.correct_answer.toLowerCase() === userAnswer;
-  score += isCorrect ? 1 : -1;
-  answered += 1;
-  updateScoreboard();
+  const normalizedChoice = normalize(choice);
+  selections.set(question.id, normalizedChoice);
 
   const buttons = card.querySelectorAll(".option-btn");
   buttons.forEach((btn) => {
-    btn.disabled = true;
-    if (btn.dataset.choice === question.correct_answer.toLowerCase()) {
-      btn.classList.add("correct");
-    } else if (btn.dataset.choice === userAnswer) {
-      btn.classList.add("incorrect");
-    }
+    const isSelected = btn === button;
+    btn.classList.toggle("selected", isSelected);
+    btn.setAttribute("aria-pressed", isSelected ? "true" : "false");
   });
 
   const feedback = card.querySelector(".feedback");
-  feedback.textContent = isCorrect ? "✔ Correcto" : "✖ Incorrecto";
-  feedback.classList.toggle("correct", isCorrect);
-  feedback.classList.toggle("incorrect", !isCorrect);
+  feedback.textContent = "Respuesta guardada. Pulsa “Enviar respuestas”.";
+  feedback.className = "feedback pending";
 
-  const explanation = card.querySelector(".explanation");
-  explanation.hidden = false;
+  updateSelectionCounter();
+  submitBtn.disabled = selections.size === 0;
+};
 
-  card.dataset.answered = "true";
+const gradeQuiz = () => {
+  if (!currentQuestions.length) {
+    setStatus("Genera una tanda antes de enviar.", "error");
+    return;
+  }
+
+  if (hasSubmitted) {
+    setStatus("Ya has enviado esta tanda. Genera una nueva para repetir.");
+    return;
+  }
+
+  let computedScore = 0;
+
+  currentQuestions.forEach((question) => {
+    const card = cardMap.get(question.id);
+    if (!card) {
+      return;
+    }
+
+    const userAnswer = selections.get(question.id);
+    const correctAnswer = normalize(question.correct_answer);
+
+    const buttons = card.querySelectorAll(".option-btn");
+    buttons.forEach((btn) => {
+      const choice = normalize(btn.dataset.choice);
+      btn.disabled = true;
+      btn.classList.remove("selected");
+      if (choice === correctAnswer) {
+        btn.classList.add("correct");
+      }
+      if (userAnswer && choice === userAnswer && userAnswer !== correctAnswer) {
+        btn.classList.add("incorrect");
+      }
+    });
+
+    const feedback = card.querySelector(".feedback");
+    let feedbackText = UNANSWERED_MESSAGE;
+    let feedbackClass = "pending";
+
+    if (!userAnswer) {
+      feedbackText = UNANSWERED_MESSAGE;
+    } else if (userAnswer === correctAnswer) {
+      computedScore += 1;
+      feedbackText = "✔ Correcto";
+      feedbackClass = "correct";
+    } else {
+      computedScore -= 1;
+      feedbackText = "✖ Incorrecto";
+      feedbackClass = "incorrect";
+    }
+
+    feedback.textContent = feedbackText;
+    feedback.className = `feedback ${feedbackClass}`;
+
+    const explanation = card.querySelector(".explanation");
+    explanation.hidden = false;
+  });
+
+  score = computedScore;
+  hasSubmitted = true;
+  refreshScoreDisplay();
+  submitBtn.disabled = true;
+
+  const unanswered = currentQuestions.length - selections.size;
+  let message = `Resultados calculados. Puntuación: ${score}.`;
+  if (unanswered > 0) {
+    message += ` ${unanswered} pregunta(s) sin responder.`;
+  }
+  setStatus(message);
 };
 
 const createQuestionCard = (question, index) => {
   const card = document.createElement("article");
   card.className = "question-card";
-  card.dataset.answered = "false";
+  card.dataset.questionId = question.id;
 
   card.innerHTML = `
     <header>
@@ -80,10 +157,10 @@ const createQuestionCard = (question, index) => {
     </header>
     <h3>${question.question}</h3>
     <div class="options">
-      <button class="option-btn" data-choice="verdadero" type="button">Verdadero</button>
-      <button class="option-btn" data-choice="falso" type="button">Falso</button>
+      <button class="option-btn" data-choice="verdadero" type="button" aria-pressed="false">Verdadero</button>
+      <button class="option-btn" data-choice="falso" type="button" aria-pressed="false">Falso</button>
     </div>
-    <p class="feedback" aria-live="polite">&nbsp;</p>
+    <p class="feedback pending" aria-live="polite">Selecciona una opción.</p>
     <div class="explanation" hidden>
       <p><strong>Explicación:</strong> ${question.explanation}</p>
       <p class="reference"><strong>Referencia:</strong> ${question.reference}</p>
@@ -93,7 +170,7 @@ const createQuestionCard = (question, index) => {
   const buttons = card.querySelectorAll(".option-btn");
   buttons.forEach((btn) => {
     btn.addEventListener("click", () =>
-      handleAnswer(question, btn.dataset.choice, card)
+      handleSelection(question, btn.dataset.choice, card, btn)
     );
   });
 
@@ -102,6 +179,7 @@ const createQuestionCard = (question, index) => {
 
 const renderQuestions = () => {
   questionsContainer.innerHTML = "";
+  cardMap.clear();
 
   if (!currentQuestions.length) {
     questionsContainer.innerHTML =
@@ -111,7 +189,9 @@ const renderQuestions = () => {
 
   const fragment = document.createDocumentFragment();
   currentQuestions.forEach((question, index) => {
-    fragment.appendChild(createQuestionCard(question, index));
+    const card = createQuestionCard(question, index);
+    fragment.appendChild(card);
+    cardMap.set(question.id, card);
   });
   questionsContainer.appendChild(fragment);
 };
@@ -131,7 +211,7 @@ const regenerateQuestions = () => {
   if (!pool.length) {
     currentQuestions = [];
     renderQuestions();
-    resetScore();
+    resetSession();
     setStatus("No hay preguntas para ese tema.", "error");
     return;
   }
@@ -142,29 +222,35 @@ const regenerateQuestions = () => {
       ? shuffled.slice(0, QUESTION_COUNT)
       : shuffled;
 
+  resetSession();
+  renderQuestions();
+  updateSelectionCounter();
+
   if (pool.length < QUESTION_COUNT) {
     setStatus(
-      `Solo hay ${pool.length} preguntas en este tema. Se mostrarán todas.`,
+      `Solo hay ${pool.length} preguntas en este tema. Completa tus respuestas y pulsa “Enviar respuestas”.`,
       "info"
     );
   } else {
-    setStatus("Nueva tanda lista. ¡A por ello!");
+    setStatus(
+      "Selecciona tus respuestas y, cuando estés lista, pulsa “Enviar respuestas”."
+    );
   }
-
-  resetScore();
-  renderQuestions();
 };
 
 const loadQuestions = async () => {
   setStatus("Cargando banco de preguntas…");
   regenerateBtn.disabled = true;
+  submitBtn.disabled = true;
   try {
     const response = await fetch("preguntes.json", { cache: "no-store" });
     if (!response.ok) {
       throw new Error("No se pudo cargar el archivo");
     }
     allQuestions = await response.json();
-    setStatus("Banco cargado. Genera tu primera tanda.");
+    setStatus(
+      "Banco cargado. Genera una tanda, responde y pulsa “Enviar respuestas”."
+    );
     regenerateBtn.disabled = false;
   } catch (error) {
     console.error(error);
@@ -175,7 +261,11 @@ const loadQuestions = async () => {
   }
 };
 
+refreshScoreDisplay();
+updateSelectionCounter();
+
 regenerateBtn.addEventListener("click", regenerateQuestions);
 topicSelect.addEventListener("change", regenerateQuestions);
+submitBtn.addEventListener("click", gradeQuiz);
 
 loadQuestions();

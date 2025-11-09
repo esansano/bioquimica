@@ -39,9 +39,14 @@
               <option value="10">Tema 10</option>
             </select>
           </label>
-          <button id="regenerateBtn" class="btn primary">
-            Generar nuevas preguntas
-          </button>
+          <div class="controls__actions">
+            <button id="regenerateBtn" class="btn primary">
+              Generar nuevas preguntas
+            </button>
+            <button id="submitBtn" class="btn secondary" disabled>
+              Enviar respuestas
+            </button>
+          </div>
         </div>
 
         <div class="scoreboard" aria-live="polite">
@@ -50,13 +55,13 @@
             <strong id="scoreValue">0</strong>
           </div>
           <div>
-            <p>Preguntas contestadas</p>
+            <p>Respuestas seleccionadas</p>
             <strong id="counterValue">0 / 20</strong>
           </div>
         </div>
         <p class="meta">
-          Verdadero / falso · +1 por acierto, −1 por error. Solo la primera
-          respuesta cuenta.
+          Verdadero / falso · +1 por acierto, −1 por error. La puntuación solo
+          se calcula al enviar tus respuestas.
         </p>
         <p class="status" id="statusMessage" role="status"></p>
       </section>
