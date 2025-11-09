@@ -1,4 +1,4 @@
-const QUESTION_COUNT = 20;
+const QUESTION_COUNT = 10;
 const UNANSWERED_MESSAGE = "✎ Sin responder";
 
 const topicSelect = document.getElementById("topicSelect");
