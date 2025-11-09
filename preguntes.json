@@ -1074,8 +1074,8 @@ qs5 = [
     {"id":"0647","unit":6,"question":"Las lipoxigenasas convierten ácido araquidónico en leucotrienos.","correct_answer":"verdadero","explanation":"La vía de la LOX produce leucotrienos implicados en respuestas inflamatorias.","reference":"T6 – Lípids, diapositiva 25"},
     {"id":"0648","unit":6,"question":"Las prostaglandinas se forman por la vía de la ciclooxigenasa.","correct_answer":"verdadero","explanation":"La COX transforma ácido araquidónico en prostaglandinas y tromboxanos.","reference":"T6 – Lípids, diapositiva 25"},
     {"id":"0649","unit":6,"question":"Los esteroides comparten un núcleo de 17 carbonos organizado en cuatro anillos fusionados.","correct_answer":"verdadero","explanation":"Es el esqueleto básico del que derivan colesterol y hormonas esteroideas.","reference":"T6 – Lípids, diapositiva 22"},
-    {"id":"0650","unit":6,"question":"El colesterol es precursor de hormonas esteroideas, ácidos biliares y vitamina D.","correct_answer":"verdadero","explanation":"Su conversión origina moléculas clave en señalización y digestión.","reference":"T6 – Lípids, diapositiva 24"},
-    
+    {"id":"0650","unit":6,"question":"El colesterol es precursor de hormonas esteroideas, ácidos biliares y vitamina D.","correct_answer":"verdadero","explanation":"Su conversión origina moléculas clave en señalización y digestión.","reference":"T6 – Lípids, diapositiva 24"}
+
 
 
 
