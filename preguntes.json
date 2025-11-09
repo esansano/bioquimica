@@ -1,0 +1,803 @@
+[
+  {
+    "id": "0101",
+    "unit": 1,
+    "question": "La bioquímica estudia los componentes químicos de los seres vivos, sus funciones y transformaciones.",
+    "correct_answer": "verdadero",
+    "explanation": "Definición de bioquímica: estudia los constituyentes químicos, sus funciones, transformaciones y procesos que las controlan.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 4"
+  },
+  {
+    "id": "0102",
+    "unit": 1,
+    "question": "El objetivo central de la bioquímica es comprender cómo interactúan las moléculas para originar los procesos vitales.",
+    "correct_answer": "verdadero",
+    "explanation": "Se enfatiza la relación entre estructura, función e interacciones moleculares para explicar los procesos vitales.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 4"
+  },
+  {
+    "id": "0103",
+    "unit": 1,
+    "question": "La bioquímica excluye el estudio de la organización de los seres vivos y se limita a moléculas aisladas.",
+    "correct_answer": "falso",
+    "explanation": "El temario incluye organización y funciones a diferentes niveles, no solo moléculas aisladas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 5"
+  },
+  {
+    "id": "0104",
+    "unit": 1,
+    "question": "La relación entre estructura y función carece de importancia en bioquímica.",
+    "correct_answer": "falso",
+    "explanation": "Se destaca explícitamente la importancia de relacionar estructura y función.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 5"
+  },
+  {
+    "id": "0105",
+    "unit": 1,
+    "question": "La genética molecular, el metabolismo y la bioquímica estructural son áreas principales de estudio de la bioquímica.",
+    "correct_answer": "verdadero",
+    "explanation": "Se indican como tres áreas principales: estructural, metabolismo y genética molecular.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 5"
+  },
+  {
+    "id": "0106",
+    "unit": 1,
+    "question": "La bioquímica nació tras la síntesis de urea a partir de cianato de amonio, que cuestionó el vitalismo.",
+    "correct_answer": "verdadero",
+    "explanation": "Wöhler sintetizó urea en 1828, hito fundacional de la bioquímica.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 6"
+  },
+  {
+    "id": "0107",
+    "unit": 1,
+    "question": "La determinación de la doble hélice del ADN no tiene relación con la bioquímica.",
+    "correct_answer": "falso",
+    "explanation": "La estructura del ADN (Watson y Crick, con aportaciones de Franklin) es un hito de la bioquímica.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 7"
+  },
+  {
+    "id": "0108",
+    "unit": 1,
+    "question": "Los seres vivos presentan alta complejidad y organización en constante renovación.",
+    "correct_answer": "verdadero",
+    "explanation": "Se enumeran atributos: complejidad, organización y renovación constante.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 8"
+  },
+  {
+    "id": "0109",
+    "unit": 1,
+    "question": "La creación de orden en los seres vivos no requiere un suministro continuo de energía.",
+    "correct_answer": "falso",
+    "explanation": "Crear y mantener orden exige un aporte continuo de energía.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 8"
+  },
+  {
+    "id": "0110",
+    "unit": 1,
+    "question": "Todas las reacciones y transformaciones químicas de un organismo vivo tienen lugar en las células.",
+    "correct_answer": "verdadero",
+    "explanation": "Se afirma que las transformaciones ocurren en las células.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 8"
+  },
+  {
+    "id": "0111",
+    "unit": 1,
+    "question": "En biología, tejido se define como un grupo de células similares con el mismo origen y organización.",
+    "correct_answer": "verdadero",
+    "explanation": "Definición de tejido como conjunto de células similares y organizadas funcionalmente.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 9"
+  },
+  {
+    "id": "0112",
+    "unit": 1,
+    "question": "Un órgano está formado por un único tipo de tejido que realiza una función.",
+    "correct_answer": "falso",
+    "explanation": "Un órgano se forma por varios tejidos distintos que cooperan en una función.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 9"
+  },
+  {
+    "id": "0113",
+    "unit": 1,
+    "question": "Un sistema está compuesto por varios órganos que realizan funciones corporales complejas.",
+    "correct_answer": "verdadero",
+    "explanation": "Se define sistema como conjunto de órganos que ejecutan funciones complejas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 9"
+  },
+  {
+    "id": "0114",
+    "unit": 1,
+    "question": "El metabolismo es el conjunto ordenado de reacciones que permiten obtener energía y poder reductor y sintetizar componentes.",
+    "correct_answer": "verdadero",
+    "explanation": "Se define metabolismo como conjunto ordenado de reacciones para obtener energía y poder reductor y biosíntesis.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 10"
+  },
+  {
+    "id": "0115",
+    "unit": 1,
+    "question": "Las vías metabólicas están formadas por reacciones en serie en las que el producto de una reacción es sustrato de la siguiente.",
+    "correct_answer": "verdadero",
+    "explanation": "Descripción de rutas o vías: reacciones en serie con eficiencia de materia y energía.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 11"
+  },
+  {
+    "id": "0116",
+    "unit": 1,
+    "question": "Cada vía metabólica está controlada por múltiples enzimas inespecíficas.",
+    "correct_answer": "falso",
+    "explanation": "Se indica que cada vía está controlada por enzimas específicos (catalizadores biológicos).",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 11"
+  },
+  {
+    "id": "0117",
+    "unit": 1,
+    "question": "El catabolismo es el proceso que convierte moléculas complejas en simples con liberación de energía.",
+    "correct_answer": "verdadero",
+    "explanation": "Definición de catabolismo: degradación con generación de energía.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 12"
+  },
+  {
+    "id": "0118",
+    "unit": 1,
+    "question": "El anabolismo es el proceso que sintetiza moléculas complejas a partir de simples con consumo de energía.",
+    "correct_answer": "verdadero",
+    "explanation": "El anabolismo corresponde a rutas biosintéticas que consumen energía y poder reductor para formar moléculas complejas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 12"
+  },
+  {
+    "id": "0119",
+    "unit": 1,
+    "question": "Anabolismo y catabolismo nunca ocurren de forma simultánea en la célula.",
+    "correct_answer": "falso",
+    "explanation": "Ambos procesos ocurren simultáneamente con velocidades reguladas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 12"
+  },
+  {
+    "id": "0120",
+    "unit": 1,
+    "question": "Las rutas metabólicas son completamente independientes y no comparten compuestos.",
+    "correct_answer": "falso",
+    "explanation": "Las rutas se entrecruzan en muchos compuestos; la célula decide el destino según necesidades.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 13"
+  },
+  {
+    "id": "0121",
+    "unit": 1,
+    "question": "Para el metabolismo celular se requieren ATP y poder reductor.",
+    "correct_answer": "verdadero",
+    "explanation": "Se resalta la necesidad de energía (ATP) y poder reductor.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 13"
+  },
+  {
+    "id": "0122",
+    "unit": 1,
+    "question": "En el nivel 1 de complejidad metabólica se interconvierten polímeros y monómeros.",
+    "correct_answer": "verdadero",
+    "explanation": "Se describen tres niveles: 1) polímeros↔monómeros; 2) monómeros→compuestos sencillos; 3) degradación a inorgánicos.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 13"
+  },
+  {
+    "id": "0123",
+    "unit": 1,
+    "question": "El CO2, H2O y NH3 son productos finales inorgánicos de la degradación en el nivel 3.",
+    "correct_answer": "verdadero",
+    "explanation": "Se listan entre los productos finales inorgánicos de la degradación.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 13"
+  },
+  {
+    "id": "0124",
+    "unit": 1,
+    "question": "El medio interno es el líquido extracelular que baña a todas las células.",
+    "correct_answer": "verdadero",
+    "explanation": "Se introduce el concepto de medio interno como líquido que rodea las células.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 14"
+  },
+  {
+    "id": "0125",
+    "unit": 1,
+    "question": "Claude Bernard introdujo el término 'medio interno' y su constancia.",
+    "correct_answer": "verdadero",
+    "explanation": "Se atribuye a Claude Bernard el concepto y la necesidad de mantener su constancia.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 14"
+  },
+  {
+    "id": "0126",
+    "unit": 1,
+    "question": "La homeostasis consiste en mantener el medio interno estable frente a variaciones del medio externo.",
+    "correct_answer": "verdadero",
+    "explanation": "Walter Cannon definió la homeostasis como mantenimiento estable del medio interno.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 16"
+  },
+  {
+    "id": "0127",
+    "unit": 1,
+    "question": "Un organismo vivo no necesita intercambiar materia, energía ni información con su entorno para mantener la homeostasis.",
+    "correct_answer": "falso",
+    "explanation": "Se indican dos necesidades: aislarse del entorno y, a la vez, intercambiar calor, gases, nutrientes y señales.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 15"
+  },
+  {
+    "id": "0128",
+    "unit": 1,
+    "question": "Los sistemas homeostáticos son inmóviles y no cambian su punto de operación.",
+    "correct_answer": "falso",
+    "explanation": "Tienen capacidad de cambio; por ejemplo, aclimatación ante estímulos mantenidos.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 19"
+  },
+  {
+    "id": "0129",
+    "unit": 1,
+    "question": "Los mecanismos de retroalimentación negativa tienden a mantener una variable dentro de un rango alrededor de un valor de referencia.",
+    "correct_answer": "verdadero",
+    "explanation": "Se explica el control por feedback negativo para mantener el equilibrio del sistema.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 18"
+  },
+  {
+    "id": "0130",
+    "unit": 1,
+    "question": "La retroalimentación positiva siempre corrige desviaciones y devuelve la variable al valor teórico.",
+    "correct_answer": "falso",
+    "explanation": "La retroalimentación positiva amplifica cambios; ejemplos: coagulación, contracciones del parto, lactancia.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 21"
+  },
+  {
+    "id": "0131",
+    "unit": 1,
+    "question": "En un diagrama de control homeostático aparecen receptor, centro de control y efector.",
+    "correct_answer": "verdadero",
+    "explanation": "Se esquematiza con estímulo, receptor, control, efector y parámetro modificado.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 20"
+  },
+  {
+    "id": "0132",
+    "unit": 1,
+    "question": "La homeostasis solo opera a escalas de tiempo largas y nunca produce respuestas rápidas.",
+    "correct_answer": "falso",
+    "explanation": "La homeostasis incluye respuestas dinámicas; algunas son rápidas según el sistema.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 18"
+  },
+  {
+    "id": "0133",
+    "unit": 1,
+    "question": "El metabolismo celular es esencialmente similar en organismos muy distintos.",
+    "correct_answer": "verdadero",
+    "explanation": "Se indica la notable similitud del metabolismo entre organismos diversos.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 11"
+  },
+  {
+    "id": "0134",
+    "unit": 1,
+    "question": "Las reacciones catalizadas por enzimas no están sometidas a control en la célula.",
+    "correct_answer": "falso",
+    "explanation": "Se afirma que las reacciones catalizadas por enzimas están bajo estricto control.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 11"
+  },
+  {
+    "id": "0135",
+    "unit": 1,
+    "question": "El desarrollo de una membrana lipídica fue clave en la evolución de la organización celular.",
+    "correct_answer": "verdadero",
+    "explanation": "Se menciona la importancia evolutiva del desarrollo de una membrana lipídica.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 9"
+  },
+  {
+    "id": "0136",
+    "unit": 1,
+    "question": "En las vías metabólicas, el producto de una reacción nunca puede ser sustrato de otra distinta.",
+    "correct_answer": "falso",
+    "explanation": "Las vías se entrecruzan; un mismo compuesto puede fluir por diferentes rutas según necesidades.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 13"
+  },
+  {
+    "id": "0137",
+    "unit": 1,
+    "question": "La energía liberada como calor en el metabolismo se pierde y no se reutiliza para trabajo celular.",
+    "correct_answer": "verdadero",
+    "explanation": "Se indica la pérdida de calor en el esquema general de metabolismo.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 10"
+  },
+  {
+    "id": "0138",
+    "unit": 1,
+    "question": "La bioquímica no considera las agrupaciones supramoleculares como cromosomas o membranas.",
+    "correct_answer": "falso",
+    "explanation": "La bioquímica estructural incluye agrupaciones supramoleculares como cromosomas y membranas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 5"
+  },
+  {
+    "id": "0139",
+    "unit": 1,
+    "question": "La acuñación del término 'célula' se atribuye históricamente a Robert Hooke.",
+    "correct_answer": "verdadero",
+    "explanation": "Se menciona a Hooke (1665) como primera observación y uso del término célula.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 6"
+  },
+  {
+    "id": "0140",
+    "unit": 1,
+    "question": "Gregor Mendel introdujo la idea del gen como unidad de información hereditaria.",
+    "correct_answer": "verdadero",
+    "explanation": "Se cita a Mendel (1865-66) y la idea del gen como unidad hereditaria.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 6"
+  },
+  {
+    "id": "0141",
+    "unit": 1,
+    "question": "La homeostasis implica que todas las variables internas permanecen exactamente constantes en todo momento.",
+    "correct_answer": "falso",
+    "explanation": "Las variables oscilan dentro de un rango de valores normales; no son constantes exactas.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 18"
+  },
+  {
+    "id": "0142",
+    "unit": 1,
+    "question": "Los sistemas homeostáticos pueden cambiar su referencia durante el desarrollo del individuo.",
+    "correct_answer": "verdadero",
+    "explanation": "Se menciona que a distintas etapas de vida cambian los niveles de referencia.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 19"
+  },
+  {
+    "id": "0143",
+    "unit": 1,
+    "question": "En catabolismo, parte de la energía se conserva en forma de ATP y parte se libera en forma de calor.",
+    "correct_answer": "verdadero",
+    "explanation": "El esquema general muestra generación de ATP y pérdida de calor.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 10"
+  },
+  {
+    "id": "0144",
+    "unit": 1,
+    "question": "En una vía metabólica, las enzimas actúan de forma desordenada y sin regulación.",
+    "correct_answer": "falso",
+    "explanation": "Las rutas están finamente reguladas y ordenadas; las reacciones enzimáticas están bajo control.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 11"
+  },
+  {
+    "id": "0145",
+    "unit": 1,
+    "question": "Las rutas anabólicas y catabólicas pueden compartir algunos pasos, pero están reguladas de manera precisa para evitar ciclos fútiles.",
+    "correct_answer": "verdadero",
+    "explanation": "Se indica que son rutas diferentes aunque comparten pasos y están reguladas con precisión.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 12"
+  },
+  {
+    "id": "0146",
+    "unit": 1,
+    "question": "El medio interno es sinónimo de citosol.",
+    "correct_answer": "falso",
+    "explanation": "El medio interno se refiere al líquido extracelular que baña las células, no al citosol.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 14"
+  },
+  {
+    "id": "0147",
+    "unit": 1,
+    "question": "La homeostasis requiere sistemas de medición de la variable, mecanismos de comparación y efectores.",
+    "correct_answer": "verdadero",
+    "explanation": "Se presenta el esquema con receptor, centro integrador y efector.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 20"
+  },
+  {
+    "id": "0148",
+    "unit": 1,
+    "question": "La leche materna y las contracciones uterinas son ejemplos clásicos de retroalimentación negativa.",
+    "correct_answer": "falso",
+    "explanation": "Se ponen como ejemplos de retroalimentación positiva (amplifican el proceso).",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 21"
+  },
+  {
+    "id": "0149",
+    "unit": 1,
+    "question": "Durante la aclimatación, los sistemas de regulación pueden reajustar el punto de operación de la variable controlada.",
+    "correct_answer": "verdadero",
+    "explanation": "Se menciona la capacidad de cambio y aclimatación de los sistemas homeostáticos.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 19"
+  },
+  {
+    "id": "0150",
+    "unit": 1,
+    "question": "En condiciones normales, el intercambio de información no forma parte del equilibrio con el entorno.",
+    "correct_answer": "falso",
+    "explanation": "Se incluye explícitamente el intercambio de información con el entorno como necesidad de los organismos.",
+    "reference": "Tema 1 (T1-Concepte.pdf), página 15"
+  },
+  
+  {
+    "id": "0201",
+    "unit": 2,
+    "question": "Los bioelementos primarios más abundantes en los seres vivos incluyen C, H, O y N.",
+    "correct_answer": "verdadero",
+    "explanation": "Son los elementos biogénicos principales y constituyen la mayor parte de la materia viva.",
+    "reference": "T2 – Composició química, diapositiva 6"
+  },
+  {
+    "id": "0202",
+    "unit": 2,
+    "question": "El azufre y el fósforo se consideran bioelementos secundarios y no forman parte de los primarios.",
+    "correct_answer": "falso",
+    "explanation": "S y P suelen incluirse entre los bioelementos primarios junto con C, H, O y N por su papel estructural y funcional.",
+    "reference": "T2 – Composició química, diapositiva 6"
+  },
+  {
+    "id": "0203",
+    "unit": 2,
+    "question": "El carbono puede formar esqueletos tridimensionales que permiten gran diversidad de biomoléculas.",
+    "correct_answer": "verdadero",
+    "explanation": "La tetravalencia del carbono posibilita estructuras lineales, ramificadas y cíclicas.",
+    "reference": "T2 – Composició química, diapositiva 7"
+  },
+  {
+    "id": "0204",
+    "unit": 2,
+    "question": "Los grupos funcionales no modifican las propiedades químicas de una molécula orgánica.",
+    "correct_answer": "falso",
+    "explanation": "Los grupos funcionales determinan reactividad y propiedades como acidez, polaridad y capacidad redox.",
+    "reference": "T2 – Composició química, diapositivas 8–9"
+  },
+  {
+    "id": "0205",
+    "unit": 2,
+    "question": "Los enlaces covalentes implican compartición de pares de electrones entre átomos.",
+    "correct_answer": "verdadero",
+    "explanation": "Definen la estructura primaria de las biomoléculas al compartir electrones.",
+    "reference": "T2 – Composició química, diapositiva 10"
+  },
+  {
+    "id": "0206",
+    "unit": 2,
+    "question": "Un enlace covalente apolar se da cuando dos átomos con electronegatividades muy diferentes comparten electrones.",
+    "correct_answer": "falso",
+    "explanation": "Si la diferencia de electronegatividad es grande, el enlace tiende a ser polar o incluso iónico; apolar ocurre cuando es similar.",
+    "reference": "T2 – Composició química, diapositiva 11"
+  },
+  {
+    "id": "0207",
+    "unit": 2,
+    "question": "Los enlaces iónicos se forman por la transferencia de electrones de un átomo a otro.",
+    "correct_answer": "verdadero",
+    "explanation": "Un átomo cede electrones y otro los capta, generando iones con atracción electrostática.",
+    "reference": "T2 – Composició química, diapositiva 12"
+  },
+  {
+    "id": "0208",
+    "unit": 2,
+    "question": "Los puentes de hidrógeno son interacciones débiles que sólo se dan entre moléculas distintas, nunca dentro de la misma molécula.",
+    "correct_answer": "falso",
+    "explanation": "Pueden ser intra- o intermoleculares; estabilizan estructuras como hélices y láminas.",
+    "reference": "T2 – Composició química, diapositiva 13"
+  },
+  {
+    "id": "0209",
+    "unit": 2,
+    "question": "Las fuerzas de Van der Waals se deben a fluctuaciones transitorias de carga y son de corta distancia.",
+    "correct_answer": "verdadero",
+    "explanation": "Son interacciones débiles por dipolos instantáneos, relevantes a distancias muy cortas.",
+    "reference": "T2 – Composició química, diapositiva 14"
+  },
+  {
+    "id": "0210",
+    "unit": 2,
+    "question": "Los puentes disulfuro se forman por oxidación de dos grupos tiol de cisteína.",
+    "correct_answer": "verdadero",
+    "explanation": "La unión -S-S- estabiliza la estructura terciaria y cuaternaria de proteínas.",
+    "reference": "T2 – Composició química, diapositiva 15"
+  },
+  {
+    "id": "0211",
+    "unit": 2,
+    "question": "El agua representa aproximadamente el 60% del peso corporal en un adulto.",
+    "correct_answer": "verdadero",
+    "explanation": "La proporción varía con la edad y el sexo, pero suele rondar el 60% en adultos.",
+    "reference": "T2 – Composició química, diapositiva 23"
+  },
+  {
+    "id": "0212",
+    "unit": 2,
+    "question": "El oxígeno es menos electronegativo que el hidrógeno, por lo que la molécula de agua es apolar.",
+    "correct_answer": "falso",
+    "explanation": "El oxígeno es más electronegativo; el agua es polar y tiene distribución asimétrica de cargas.",
+    "reference": "T2 – Composició química, diapositiva 17"
+  },
+  {
+    "id": "0213",
+    "unit": 2,
+    "question": "Cada molécula de agua puede formar hasta cuatro puentes de hidrógeno con moléculas vecinas.",
+    "correct_answer": "verdadero",
+    "explanation": "Dos como donante y dos como aceptor, generando una red reticular transitoria.",
+    "reference": "T2 – Composició química, diapositiva 18"
+  },
+  {
+    "id": "0214",
+    "unit": 2,
+    "question": "El agua es un buen disolvente de sustancias apolares puras.",
+    "correct_answer": "falso",
+    "explanation": "El agua disuelve bien solutos polares e iónicos; las sustancias apolares tienden a agregarse.",
+    "reference": "T2 – Composició química, diapositiva 19"
+  },
+  {
+    "id": "0215",
+    "unit": 2,
+    "question": "Las sustancias anfipáticas pueden formar micelas o bicapas en agua debido al efecto hidrófobo.",
+    "correct_answer": "verdadero",
+    "explanation": "Los grupos hidrofóbicos se agrupan minimizando su contacto con el agua; los polares quedan expuestos.",
+    "reference": "T2 – Composició química, diapositiva 20"
+  },
+  {
+    "id": "0216",
+    "unit": 2,
+    "question": "La presión osmótica impulsa el paso de soluto a través de una membrana semipermeable.",
+    "correct_answer": "falso",
+    "explanation": "La membrana deja pasar disolvente; lo que se mueve es el agua desde el medio menos concentrado al más concentrado.",
+    "reference": "T2 – Composició química, diapositiva 21"
+  },
+  {
+    "id": "0217",
+    "unit": 2,
+    "question": "En un medio hipotónico, las células animales tienden a hincharse y pueden romperse.",
+    "correct_answer": "verdadero",
+    "explanation": "Entra agua por ósmosis; sin pared celular rígida, pueden lisarse.",
+    "reference": "T2 – Composició química, diapositiva 22"
+  },
+  {
+    "id": "0218",
+    "unit": 2,
+    "question": "En el balance hídrico diario, la orina es una de las principales vías de pérdida de agua.",
+    "correct_answer": "verdadero",
+    "explanation": "Las pérdidas principales son por orina y por respiración/sudoración; las heces representan una fracción menor.",
+    "reference": "T2 – Composició química, diapositiva 24"
+  },
+  {
+    "id": "0219",
+    "unit": 2,
+    "question": "Un electrólito es una sustancia que en agua no se disocia, por lo que no conduce la corriente.",
+    "correct_answer": "falso",
+    "explanation": "Por definición, los electrólitos se disocian en iones en agua y conducen electricidad.",
+    "reference": "T2 – Composició química, diapositiva 25"
+  },
+  {
+    "id": "0220",
+    "unit": 2,
+    "question": "Un ácido, según Brønsted-Lowry, es un donador de protones.",
+    "correct_answer": "verdadero",
+    "explanation": "La teoría ácido-base de Brønsted define ácidos como donadores de H+ y bases como aceptores.",
+    "reference": "T2 – Composició química, diapositiva 25"
+  },
+  {
+    "id": "0221",
+    "unit": 2,
+    "question": "El agua pura a 25 °C tiene pH 7 porque [H+] = [OH−].",
+    "correct_answer": "verdadero",
+    "explanation": "En el agua neutra a 25 °C, la autoionización produce concentraciones iguales de H+ y OH−.",
+    "reference": "T2 – Composició química, diapositiva 26"
+  },
+  {
+    "id": "0222",
+    "unit": 2,
+    "question": "Un tampón (buffer) mantiene el pH exactamente constante aunque se añadan grandes cantidades de ácido fuerte.",
+    "correct_answer": "falso",
+    "explanation": "Un tampón resiste cambios de pH dentro de un rango y capacidad finitos; puede saturarse.",
+    "reference": "T2 – Composició química, diapositivas 27–29"
+  },
+  {
+    "id": "0223",
+    "unit": 2,
+    "question": "La ecuación de Henderson–Hasselbalch relaciona pH, pKa y la razón base/ácido conjugado.",
+    "correct_answer": "verdadero",
+    "explanation": "Permite estimar pH de sistemas tampón a partir de las concentraciones relativas.",
+    "reference": "T2 – Composició química, diapositiva 28"
+  },
+  {
+    "id": "0224",
+    "unit": 2,
+    "question": "Los tampones son más eficaces cuando el pH está cerca del pKa del par ácido–base.",
+    "correct_answer": "verdadero",
+    "explanation": "La capacidad amortiguadora es máxima alrededor de pH ≈ pKa.",
+    "reference": "T2 – Composició química, diapositiva 29"
+  },
+  {
+    "id": "0225",
+    "unit": 2,
+    "question": "El tampón fosfato tiene un pKa cercano a 6,9 y es relevante en medios intracelulares.",
+    "correct_answer": "verdadero",
+    "explanation": "El sistema H2PO4−/HPO4²− con pKa ≈ 6,86 actúa en el citosol.",
+    "reference": "T2 – Composició química, diapositiva 30"
+  },
+  {
+    "id": "0226",
+    "unit": 2,
+    "question": "El sistema tampón bicarbonato es poco importante en la sangre.",
+    "correct_answer": "falso",
+    "explanation": "Es el principal tampón extracelular en sangre y se regula por ventilación y función renal.",
+    "reference": "T2 – Composició química, diapositivas 31–32"
+  },
+  {
+    "id": "0227",
+    "unit": 2,
+    "question": "En acidosis respiratoria, la hiperventilación eleva el pH sanguíneo.",
+    "correct_answer": "falso",
+    "explanation": "La hiperventilación reduce CO2 y tiende a alcalinizar (alcalosis respiratoria); la acidosis se asocia a hipoventilación.",
+    "reference": "T2 – Composició química, diapositiva 32"
+  },
+  {
+    "id": "0228",
+    "unit": 2,
+    "question": "La alta capacidad calorífica del agua ayuda a mantener la temperatura corporal.",
+    "correct_answer": "verdadero",
+    "explanation": "El agua absorbe calor con pequeños cambios de temperatura, estabilizando el medio interno.",
+    "reference": "T2 – Composició química, diapositiva 16"
+  },
+  {
+    "id": "0229",
+    "unit": 2,
+    "question": "La tensión superficial del agua es baja debido a la ausencia de puentes de hidrógeno.",
+    "correct_answer": "falso",
+    "explanation": "La elevada tensión superficial se debe precisamente a la extensa red de puentes de hidrógeno.",
+    "reference": "T2 – Composició química, diapositivas 17–18"
+  },
+  {
+    "id": "0230",
+    "unit": 2,
+    "question": "En disoluciones isotónicas no hay flujo neto de agua a través de la membrana celular.",
+    "correct_answer": "verdadero",
+    "explanation": "Las actividades de agua a ambos lados son equivalentes y el volumen celular se mantiene.",
+    "reference": "T2 – Composició química, diapositiva 22"
+  },
+  {
+    "id": "0231",
+    "unit": 2,
+    "question": "Los minerales disueltos no participan en funciones osmóticas ni de regulación del pH.",
+    "correct_answer": "falso",
+    "explanation": "Los iones como Na+, K+, Cl− y HCO3− son esenciales en osmolaridad, pH y excitabilidad.",
+    "reference": "T2 – Composició química, diapositivas 21, 31–32"
+  },
+  {
+    "id": "0232",
+    "unit": 2,
+    "question": "El efecto hidrófobo describe la tendencia de las moléculas polares a agruparse en agua.",
+    "correct_answer": "falso",
+    "explanation": "Se refiere a la agregación de regiones apolares para minimizar la exposición al agua.",
+    "reference": "T2 – Composició química, diapositiva 20"
+  },
+  {
+    "id": "0233",
+    "unit": 2,
+    "question": "La autoionización del agua es un proceso en el que se generan H+ y OH− en cantidades iguales.",
+    "correct_answer": "verdadero",
+    "explanation": "A 25 °C, Kw = 10⁻¹⁴ y en agua pura [H+] = [OH−] = 10⁻⁷ M.",
+    "reference": "T2 – Composició química, diapositiva 26"
+  },
+  {
+    "id": "0234",
+    "unit": 2,
+    "question": "En un sistema tampón, añadir pequeñas cantidades de base fuerte produce un descenso pronunciado del pH.",
+    "correct_answer": "falso",
+    "explanation": "El tampón neutraliza parcialmente la base añadida y atenúa la variación de pH.",
+    "reference": "T2 – Composició química, diapositivas 27–29"
+  },
+  {
+    "id": "0235",
+    "unit": 2,
+    "question": "El bicarbonato (HCO3−) actúa como base conjugada del ácido carbónico (H2CO3).",
+    "correct_answer": "verdadero",
+    "explanation": "Juntos forman el principal sistema tampón sanguíneo.",
+    "reference": "T2 – Composició química, diapositivas 31–32"
+  },
+  {
+    "id": "0236",
+    "unit": 2,
+    "question": "Los grupos carboxilo y amino son irrelevantes para la acidez y basicidad de los aminoácidos.",
+    "correct_answer": "falso",
+    "explanation": "El carboxilo aporta acidez y el amino basicidad; el estado de protonación depende del pH.",
+    "reference": "T2 – Composició química, diapositiva 8"
+  },
+  {
+    "id": "0237",
+    "unit": 2,
+    "question": "El enlace iónico es direccional, mientras que el covalente no lo es.",
+    "correct_answer": "falso",
+    "explanation": "El covalente es direccional (geometría definida); el iónico es no direccional y depende de atracciones electrostáticas.",
+    "reference": "T2 – Composició química, diapositivas 10–12"
+  },
+  {
+    "id": "0238",
+    "unit": 2,
+    "question": "Los puentes de hidrógeno en el agua son permanentes y no se rompen a temperatura ambiente.",
+    "correct_answer": "falso",
+    "explanation": "Son transitorios y se rompen/forman continuamente, aunque en conjunto confieren cohesión.",
+    "reference": "T2 – Composició química, diapositiva 18"
+  },
+  {
+    "id": "0239",
+    "unit": 2,
+    "question": "El agua corporal total aumenta con la edad desde el embrión hasta el adulto.",
+    "correct_answer": "falso",
+    "explanation": "El porcentaje de agua disminuye desde etapas embrionarias/fetales hacia la adultez y tercera edad.",
+    "reference": "T2 – Composició química, diapositiva 23"
+  },
+  {
+    "id": "0240",
+    "unit": 2,
+    "question": "El sudor y la respiración constituyen una vía de pérdida de agua.",
+    "correct_answer": "verdadero",
+    "explanation": "La evaporación por piel y respiración representa pérdidas insensibles significativas.",
+    "reference": "T2 – Composició química, diapositiva 24"
+  },
+  {
+    "id": "0241",
+    "unit": 2,
+    "question": "Una base es una sustancia que al disolverse aumenta la concentración de protones libres en la disolución.",
+    "correct_answer": "falso",
+    "explanation": "Las bases aceptan protones o aportan OH−, disminuyendo [H+].",
+    "reference": "T2 – Composició química, diapositiva 25"
+  },
+  {
+    "id": "0242",
+    "unit": 2,
+    "question": "La razón [base]/[ácido] de un tampón igual a 1 implica que pH = pKa.",
+    "correct_answer": "verdadero",
+    "explanation": "Por Henderson–Hasselbalch, cuando [A−] = [HA], pH = pKa.",
+    "reference": "T2 – Composició química, diapositiva 28"
+  },
+  {
+    "id": "0243",
+    "unit": 2,
+    "question": "El sistema fosfato no puede actuar como tampón dentro de la célula.",
+    "correct_answer": "falso",
+    "explanation": "Es un tampón intracelular relevante por su pKa próximo al pH citosólico.",
+    "reference": "T2 – Composició química, diapositiva 30"
+  },
+  {
+    "id": "0244",
+    "unit": 2,
+    "question": "El CO2 disuelto en sangre está relacionado con el pH a través del equilibrio con H2CO3/HCO3−.",
+    "correct_answer": "verdadero",
+    "explanation": "La ventilación modifica CO2 y, por tanto, el equilibrio ácido–base sanguíneo.",
+    "reference": "T2 – Composició química, diapositiva 31"
+  },
+  {
+    "id": "0245",
+    "unit": 2,
+    "question": "Los enlaces disulfuro aparecen exclusivamente en proteínas intracelulares y nunca en secretadas.",
+    "correct_answer": "falso",
+    "explanation": "Son más frecuentes en proteínas secretadas y dominios extracelulares, estabilizando su estructura.",
+    "reference": "T2 – Composició química, diapositiva 15"
+  },
+  {
+    "id": "0246",
+    "unit": 2,
+    "question": "La anisotropía direccional del enlace covalente contribuye a la geometría definida de las macromoléculas.",
+    "correct_answer": "verdadero",
+    "explanation": "Los ángulos y longitudes de enlace determinan conformaciones y estructuras.",
+    "reference": "T2 – Composició química, diapositivas 10–11"
+  },
+  {
+    "id": "0247",
+    "unit": 2,
+    "question": "En una solución ácida, la concentración de H+ es menor que la de OH−.",
+    "correct_answer": "falso",
+    "explanation": "En medios ácidos [H+] > [OH−]; en básicos ocurre lo contrario.",
+    "reference": "T2 – Composició química, diapositiva 26"
+  },
+  {
+    "id": "0248",
+    "unit": 2,
+    "question": "La red de puentes de hidrógeno explica la alta cohesión y la capilaridad del agua.",
+    "correct_answer": "verdadero",
+    "explanation": "Las uniones entre moléculas de agua permiten fenómenos como capilaridad y elevada tensión superficial.",
+    "reference": "T2 – Composició química, diapositivas 17–18"
+  },
+  {
+    "id": "0249",
+    "unit": 2,
+    "question": "En medio hipertónico, las células vegetales se hinchan hasta romperse.",
+    "correct_answer": "falso",
+    "explanation": "Pierden agua y sufren plasmólisis; la pared celular limita la rotura por hinchazón.",
+    "reference": "T2 – Composició química, diapositiva 22"
+  },
+  {
+    "id": "0250",
+    "unit": 2,
+    "question": "La capacidad amortiguadora de un tampón depende de las concentraciones absolutas de sus componentes.",
+    "correct_answer": "verdadero",
+    "explanation": "A mayor concentración total del sistema ácido–base, mayor capacidad tampón dentro del rango operativo.",
+    "reference": "T2 – Composició química, diapositivas 27–29"
+  }
+]

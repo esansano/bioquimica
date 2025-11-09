@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bioquímica · Práctica Tipo Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Autoevaluación</p>
+        <h1>Bioquímica · Verdadero / Falso</h1>
+        <p>
+          Practica con preguntas reales de los temas 1 al 10. Elige el tema,
+          contesta 20 preguntas aleatorias y revisa al momento la explicación y
+          la referencia en tus apuntes.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card controls">
+        <h2>Configura tu sesión</h2>
+        <div class="controls__grid">
+          <label class="control">
+            <span>Temario</span>
+            <select id="topicSelect">
+              <option value="all">Todos los temas</option>
+              <option value="1">Tema 1</option>
+              <option value="2">Tema 2</option>
+              <option value="3">Tema 3</option>
+              <option value="4">Tema 4</option>
+              <option value="5">Tema 5</option>
+              <option value="6">Tema 6</option>
+              <option value="7">Tema 7</option>
+              <option value="8">Tema 8</option>
+              <option value="9">Tema 9</option>
+              <option value="10">Tema 10</option>
+            </select>
+          </label>
+          <button id="regenerateBtn" class="btn primary">
+            Generar nuevas preguntas
+          </button>
+        </div>
+
+        <div class="scoreboard" aria-live="polite">
+          <div>
+            <p>Puntuación</p>
+            <strong id="scoreValue">0</strong>
+          </div>
+          <div>
+            <p>Preguntas contestadas</p>
+            <strong id="counterValue">0 / 20</strong>
+          </div>
+        </div>
+        <p class="meta">
+          Verdadero / falso · +1 por acierto, −1 por error. Solo la primera
+          respuesta cuenta.
+        </p>
+        <p class="status" id="statusMessage" role="status"></p>
+      </section>
+
+      <section class="questions" id="questionsContainer">
+        <p class="placeholder">
+          Carga las preguntas para empezar. Usa el botón “Generar nuevas
+          preguntas”.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Consejo: intenta completar las 20 preguntas sin mirar las explicaciones.
+        Después revisa los apuntes citados para reforzar cada concepto.
+      </p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
